@@ -1,0 +1,48 @@
+.feedback-form {
+
+    font-family: $helvetica;
+
+    & > * {
+        display: block;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 15px;
+
+        font-size: 12px;
+        line-height: 1.5;
+
+        border: 1px solid $feedback-form__border-color;
+        outline: none;
+    }
+
+    input[type="text"] {
+        width: 365px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        resize: none;
+        height: 95px;
+        width: 365px;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"]::placeholder,
+    textarea::placeholder {
+        color: $feedback-form__placeholder-color;
+    }
+
+    input[type="submit"] {
+        padding: 20px 25px;
+
+        text-transform: uppercase;
+        color: $feedback-form__submit-color;
+
+        background-color: $feedback-form__submit-bg;
+        outline: none;
+        border: none;
+    }
+
+}

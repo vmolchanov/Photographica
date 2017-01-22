@@ -1,0 +1,32 @@
+.main-menu {
+
+    .main-menu__list {
+        list-style: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .main-menu__item {
+        display: inline-block;
+    }
+
+    .main-menu__item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .main-menu__item a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+    
+    .main-menu__item.active a {
+        color: $main-menu__active-color;
+    }
+    
+    .main-menu__item:not(.active) a {
+        color: $main-menu__nonactive-color;
+    }
+
+}
