@@ -1,0 +1,10 @@
+.col-1-2,
+.col-2-2 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}

@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixins";
 
+@import "grid/row";
+@import "grid/col-2";
+
 @import "components/base";
 @import "components/main-header";
 @import "components/main-menu";
@@ -10,3 +13,5 @@
 @import "components/contact";
 @import "components/feedback";
 @import "components/feedback-form";
+@import "components/photo-overlay";
+@import "components/animation";

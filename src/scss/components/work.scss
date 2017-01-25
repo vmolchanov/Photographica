@@ -7,99 +7,75 @@
         @include container();
     }
 
-    .work__list {
-        position: relative;
-
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-
-        font-size: 0;
-
-        list-style: none;
+    .square {
+        width: $work-size__square;
+        height: $work-size__square;
     }
 
-    .work__item:not(:nth-child(2)):not(:nth-child(9)) img {
-        height: 100%;
+    .rect {
+        width: $work-width__rect;
+        height: $work-height__rect;
     }
 
-    .work__item:first-child,
-    .work__item:nth-child(3),
-    .work__item:nth-child(4),
-    .work__item:nth-child(6),
-    .work__item:nth-child(7) {
-        margin-right: 15px;
+    .turn-rect {
+        width: $work-height__rect;
+        height: $work-width__rect;
     }
 
-    .work__item:not(:nth-child(6)):not(:nth-child(9)) {
-        margin-bottom: 15px;
-    }
-
-    .work__item:nth-child(9) {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+    .photo {
+        overflow: hidden;
     }
 
     a {
         position: relative;
 
         display: block;
+        width: 100%;
+        height: 100%;
 
-        overflow: hidden;
-    }
-
-    a.square {
-        width: $work-size__square;
-        height: $work-size__square;
-    }
-
-    a.rect {
-        width: $work-width__rect;
-        height: $work-height__rect;
-    }
-
-    a.turn-rect {
-        width: $work-height__rect;
-        height: $work-width__rect;
+        text-decoration: none;
     }
 
     img {
         position: absolute;
-        left: 0;
-        top: 0;
     }
 
-    .work__item:first-child img {
+    .photo-1 img,
+    .photo-7 img {
         left: -110px;
     }
 
-    .work__item:nth-child(4) img {
+    .photo-4 img,
+    .photo-6 img,
+    .photo-7 img {
         left: -175px;
     }
 
-    .work__item:nth-child(5) img {
-        left: -175px;
+    .photo-5 img {
+        left: -280px;
     }
 
-    .work__item:nth-child(6) img {
-        left: -175px;
-    }
-
-    .work__item:nth-child(7) img {
-        left: -110px;
-    }
-
-    .work__item:nth-child(8) img {
-        left: -175px;
-    }
-
-    .work__item:last-child img {
+    .photo-9 img {
         top: -110px;
     }
+
+    .photo-1,
+    .photo-3,
+    .photo-4,
+    .photo-6,
+    .photo-7 {
+        margin-right: 15px;
+    }
+
+    .photo:not(.photo-6):not(.photo-9) {
+        margin-bottom: 15px;
+    }
+
+    .photo-4 a,
+    .photo-4 img {
+        height: 100%;
+    }
+
+
 
 }

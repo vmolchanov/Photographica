@@ -1,0 +1,44 @@
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    color: $work__item-overlay-color;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+
+    h3 {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    &:hover {
+        animation-name: smooth-opacity;
+        animation-duration: 0.3s;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+}
