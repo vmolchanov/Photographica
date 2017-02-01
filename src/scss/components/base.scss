@@ -1,6 +1,10 @@
 body {
     min-width: $container-width-1200;
 
+    @media (max-width: 768px) {
+        min-width: $container-width-768;
+    }
+
     @media (max-width: 480px) {
         min-width: $container-width-480;
     }

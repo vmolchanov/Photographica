@@ -7,11 +7,15 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    @media (max-width: 320px) {
-        flex-direction: column;
+    @media (max-width: 768px) {
+        display: block;
     }
 
     @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 320px) {
         flex-direction: column;
     }
 

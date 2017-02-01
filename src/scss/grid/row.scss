@@ -5,11 +5,17 @@
     align-items: stretch;
     justify-content: flex-start;
 
-    @media (max-width: 320px) {
+    @media (max-width: 768px) {
         flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 320px) {
         flex-direction: column;
     }
 

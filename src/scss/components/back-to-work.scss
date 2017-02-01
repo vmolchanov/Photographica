@@ -18,6 +18,7 @@
         line-height: 30px;
     }
 
+    // portfolio icon
     a::before {
         position: absolute;
         top: 80px;
@@ -33,6 +34,7 @@
         content: "";
     }
 
+    // vertical line
     a::after {
         position: absolute;
         top: 0;
@@ -40,11 +42,19 @@
 
         display: block;
         width: 1px;
-        height: 250px;
+        height: 100%;
 
         background-color: #000;
 
         content: "";
+    }
+
+    @media (max-width: 768px) {
+        // portfolio icon
+        a::before {
+            left: 142px;
+            top: 150px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -52,11 +62,13 @@
         align-items: flex-start;
         padding-top: 90px;
 
+        // portfolio icon
         a::before {
             left: 55px;
             top: 70px;
         }
 
+        // vertical line
         a::after {
             content: none;
         }
@@ -67,11 +79,13 @@
         align-items: flex-start;
         padding-top: 90px;
 
+        // portfolio icon
         a::before {
             left: 55px;
             top: 70px;
         }
 
+        // vertical line
         a::after {
             content: none;
         }

@@ -29,17 +29,36 @@
         text-align: center;
     }
 
-    // triangle decorate
+    // triangle
     p::after {
         @include get-triangle-style(auto, 0, auto, 0);
     }
 
+    // triangle
     p::before {
         @include get-triangle-style(100px, 0, auto, -50px);
     }
 
+    // triangle
     &__wrap::after {
         @include get-triangle-style(auto, 567px, 265px, auto);
+    }
+
+    @media (max-width: 768px) {
+        &__wrap {
+            @include container768();
+        }
+
+        // triangle
+        p::before {
+            top: 150px;
+        }
+
+        // triangle
+        &__wrap::after {
+            right: 307px;
+            bottom: 240px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -54,12 +73,13 @@
             line-height: 34px;
         }
 
+        // triangle
         p::before {
             top: 102px;
         }
 
+        // triangle
         &__wrap::after {
-            //content: none;
             right: 177px;
             bottom: 189px;
         }
@@ -77,15 +97,17 @@
             line-height: 32px;
         }
 
+        // triangle
         p::after {
             left: 0;
-
         }
 
+        // triangle
         p::before {
             top: 96px;
         }
 
+        // triangle
         &__wrap::after {
             right: 107px;
             bottom: 192px;

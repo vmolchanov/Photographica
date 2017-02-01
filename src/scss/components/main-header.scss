@@ -27,6 +27,12 @@
         justify-content: space-between;
     }
 
+    @media (max-width: 768px) {
+        &__wrap {
+            @include container768();
+        }
+    }
+
     @media (max-width: 480px) {
         padding: 5px 0;
 

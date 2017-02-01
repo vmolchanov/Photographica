@@ -62,10 +62,6 @@
             margin-bottom: 30px;
         }
 
-        li:hover {
-
-        }
-
         a {
             text-decoration: none;
             color: $feedback-color__span;
@@ -74,6 +70,10 @@
         a:hover {
             text-decoration: underline;
         }
+    }
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
     }
 
     @media (max-width: 480px) {

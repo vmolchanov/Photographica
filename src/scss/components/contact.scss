@@ -17,6 +17,12 @@
         color: $feedback-color__header;
     }
 
+    @media (max-width: 768px) {
+        &__wrap {
+            @include container768();
+        }
+    }
+
     @media (max-width: 480px) {
         &__wrap {
             @include container480();
