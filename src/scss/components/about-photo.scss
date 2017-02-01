@@ -34,6 +34,29 @@
         }
     }
 
+    @media (max-width: 480px) {
+        padding: 40px 0;
+
+        &__wrap {
+            @include container480();
+
+            flex-direction: column;
+        }
+
+        .about-photo__content {
+            padding-right: 0;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+
     @media (max-width: 320px) {
         padding: 40px 0;
 
@@ -44,6 +67,8 @@
         }
 
         .about-photo__content {
+            padding-right: 0;
+
             h3 {
                 font-size: 18px;
             }

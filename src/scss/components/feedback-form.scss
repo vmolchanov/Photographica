@@ -50,6 +50,14 @@
         cursor: pointer;
     }
 
+    @media (max-width: 480px) {
+        input[type="text"],
+        textarea {
+            box-sizing: border-box;
+            width: $container-width-480;
+        }
+    }
+
     @media (max-width: 320px) {
         input[type="text"],
         textarea {

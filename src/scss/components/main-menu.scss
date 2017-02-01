@@ -33,6 +33,16 @@
         color: $main-menu__active--dark-color;
     }
 
+    @media (max-width: 480px) {
+        .main-menu__item:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        .main-menu__item a {
+            font-size: 12px;
+        }
+    }
+
     @media (max-width: 320px) {
         .main-menu__item:not(:last-child) {
             margin-right: 15px;

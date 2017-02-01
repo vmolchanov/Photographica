@@ -17,6 +17,16 @@
         color: $feedback-color__header;
     }
 
+    @media (max-width: 480px) {
+        &__wrap {
+            @include container480();
+        }
+
+        .contact__header {
+            font-size: 36px;
+        }
+    }
+
     @media (max-width: 320px) {
         &__wrap {
             @include container320();
@@ -24,6 +34,8 @@
 
         .contact__header {
             margin-bottom: 15px;
+
+            font-size: 32px;
         }
     }
 

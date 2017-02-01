@@ -42,6 +42,29 @@
         @include get-triangle-style(auto, 567px, 265px, auto);
     }
 
+    @media (max-width: 480px) {
+        &__wrap {
+            @include container480();
+
+            height: 550px;
+        }
+
+        p {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        p::before {
+            top: 102px;
+        }
+
+        &__wrap::after {
+            //content: none;
+            right: 177px;
+            bottom: 189px;
+        }
+    }
+
     @media (max-width: 320px) {
         &__wrap {
             @include container320();
@@ -58,9 +81,11 @@
             left: 0;
 
         }
+
         p::before {
             top: 96px;
         }
+
         &__wrap::after {
             right: 107px;
             bottom: 192px;

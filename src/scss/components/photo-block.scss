@@ -38,6 +38,28 @@
         cursor: pointer;
     }
 
+    @media (max-width: 480px) {
+        height: 250px;
+
+        .photo-block__btn {
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .photo-1,
+        .photo-2,
+        .photo-3,
+        .photo-4,
+        .photo-7,
+        .photo-8 {
+            left: -60px;
+        }
+
+        .photo-5 {
+            left: -230px;
+        }
+    }
+
     @media (max-width: 320px) {
 
         height: 200px;
@@ -53,19 +75,12 @@
             width: auto;
         }
 
-        .photo-1 {
-            left: -120px;
-        }
-
-        .photo-2 {
-            left: -120px;
-        }
-
-        .photo-3 {
-            left: -120px;
-        }
-
-        .photo-4 {
+        .photo-1,
+        .photo-2,
+        .photo-3,
+        .photo-4,
+        .photo-7,
+        .photo-8 {
             left: -120px;
         }
 
@@ -73,18 +88,7 @@
             left: -310px;
         }
 
-        .photo-6 {
-            left: -220px;
-        }
-
-        .photo-7 {
-            left: -120px;
-        }
-
-        .photo-8 {
-            left: -120px;
-        }
-
+        .photo-6,
         .photo-9 {
             left: -220px;
         }
