@@ -45,4 +45,17 @@
         border: none;
     }
 
+    input[type="submit"]:hover {
+        background-color: lighten($feedback-form__submit-bg, 5%);
+        cursor: pointer;
+    }
+
+    @media (max-width: 320px) {
+        input[type="text"],
+        textarea {
+            box-sizing: border-box;
+            width: $container-width-320;
+        }
+    }
+
 }

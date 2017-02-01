@@ -1,0 +1,65 @@
+.back-to-work {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+
+    a {
+        text-decoration: none;
+        color: $back-to-work-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    a::before {
+        position: absolute;
+        top: 80px;
+        left: 275px;
+
+        display: block;
+        width: 12px;
+        height: 10px;
+
+        background: url("../img/portfolio.svg") no-repeat center center;
+        background-size: 12px 10px;
+
+        content: "";
+    }
+
+    a::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+        width: 1px;
+        height: 250px;
+
+        background-color: #000;
+
+        content: "";
+    }
+
+    @media (max-width: 320px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 90px;
+
+        a::before {
+            left: 55px;
+            top: 70px;
+        }
+
+        a::after {
+            content: none;
+        }
+    }
+
+}

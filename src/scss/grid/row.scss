@@ -5,4 +5,8 @@
     align-items: stretch;
     justify-content: flex-start;
 
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
+
 }

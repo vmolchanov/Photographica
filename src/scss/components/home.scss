@@ -5,6 +5,8 @@
     &__wrap {
         @include container();
 
+        position: relative;
+
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -13,6 +15,8 @@
     }
 
     p {
+        position: relative;
+
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 700px;
@@ -23,6 +27,44 @@
         font-size: 42px;
         line-height: 50px;
         text-align: center;
+    }
+
+    // triangle decorate
+    p::after {
+        @include get-triangle-style(auto, 0, auto, 0);
+    }
+
+    p::before {
+        @include get-triangle-style(100px, 0, auto, -50px);
+    }
+
+    &__wrap::after {
+        @include get-triangle-style(auto, 567px, 265px, auto);
+    }
+
+    @media (max-width: 320px) {
+        &__wrap {
+            @include container320();
+
+            height: 550px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        p::after {
+            left: 0;
+
+        }
+        p::before {
+            top: 96px;
+        }
+        &__wrap::after {
+            right: 107px;
+            bottom: 192px;
+        }
     }
 
 }

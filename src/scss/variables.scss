@@ -1,5 +1,6 @@
 // container width
 $container-width-1200: 1200px;
+$container-width-320: 280px;
 
 // fonts
 $helvetica: "Helvetica", "Arial", sans-serif;
@@ -8,6 +9,9 @@ $helvetica: "Helvetica", "Arial", sans-serif;
 $work-size__square: 390px;
 $work-width__rect: 795px;
 $work-height__rect: 390px;
+$work-size__square--320: 280px;
+$work-width__rect--320: 280px;
+$work-height__rect--320: 140px;
 
 // colors
 $main-menu__active-color: #231f20;
@@ -21,3 +25,9 @@ $feedback-form__placeholder-color: #8a8a8b;
 $feedback-form__submit-color: #fff;
 $feedback-form__submit-bg: #231f20;
 $work__item-overlay-color: #fcfcff;
+$home__triangle-color: #231f20;
+$main-header--dark-color: #231f20;
+$main-menu__active--dark-color: #fafafd;
+$logo--dark-color: #fafafd;
+$photo__btn-color: #fff;
+$back-to-work-color: #000;

@@ -4,8 +4,29 @@
     margin-right: auto;
 }
 
-@mixin clearfix() {
+@mixin container320() {
+    width: $container-width-320;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin get-triangle-style($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+
+    display: block;
+    height: 0;
+    width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    border-left: 15px solid $home__triangle-color;
+    border-bottom: 15px solid transparent;
+    transform: rotate(45deg);
+
     content: "";
-    display: table;
-    clear: both;
 }

@@ -1,0 +1,93 @@
+.photo-block {
+
+    position: relative;
+
+    height: 480px;
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    .photo-block__btn {
+        position: absolute;
+        right: 150px;
+        bottom: 10px;
+
+        height: 45px;
+        width: 45px;
+
+        background: $photo__btn-color url("../img/maximize.svg") no-repeat center center;
+        background-size: 20px 20px;
+        border: none;
+        outline: none;
+    }
+
+    .photo-block.minimize .photo-block__btn {
+        background-image: url("../img/minimize.svg");
+    }
+
+    .photo-block__btn:hover {
+        background-color: darken($photo__btn-color, 5%);
+        cursor: pointer;
+    }
+
+    .photo-block__btn:active {
+        background-color: darken($photo__btn-color, 15%);
+        cursor: pointer;
+    }
+
+    @media (max-width: 320px) {
+
+        height: 200px;
+
+        .photo-block__btn {
+            bottom: 15px;
+            right: 15px;
+        }
+
+        img {
+            position: absolute;
+
+            width: auto;
+        }
+
+        .photo-1 {
+            left: -120px;
+        }
+
+        .photo-2 {
+            left: -120px;
+        }
+
+        .photo-3 {
+            left: -120px;
+        }
+
+        .photo-4 {
+            left: -120px;
+        }
+
+        .photo-5 {
+            left: -310px;
+        }
+
+        .photo-6 {
+            left: -220px;
+        }
+
+        .photo-7 {
+            left: -120px;
+        }
+
+        .photo-8 {
+            left: -120px;
+        }
+
+        .photo-9 {
+            left: -220px;
+        }
+    }
+
+}

@@ -17,4 +17,14 @@
         color: $feedback-color__header;
     }
 
+    @media (max-width: 320px) {
+        &__wrap {
+            @include container320();
+        }
+
+        .contact__header {
+            margin-bottom: 15px;
+        }
+    }
+
 }
